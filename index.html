@@ -1,111 +1,414 @@
-Pitch Comercial — Diagnóstico e Tratamento de Bases de Dados (Web App)
-Diagnóstico Inteligente de Bases de Dados – Limpeza e Qualidade de Leads em um Clique!
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnóstico de Base | Portfólio de Vitória Mariana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/custom.css">
+  <link href="https://cdn.pixabay.com/photo/2017/01/18/08/25/social-media-1989152_1280.jpg" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://cdn.pixabay.com/photo/2017/01/18/08/25/social-media-1989152_1280.jpg" rel="apple-touch-icon" />
+  <style>
+    .glass { background: rgba(255,255,255,0.85); backdrop-filter: blur(7px); box-shadow: 0 8px 40px rgba(0,0,0,0.13); border-radius: 22px; }
+    .sidebar-glass { background: rgba(38,56,89,0.80); backdrop-filter: blur(6px); box-shadow: 0 4px 32px rgba(0,0,0,0.09); border-radius: 20px; }
+    .scrollbar::-webkit-scrollbar { width: 7px; }
+    .scrollbar::-webkit-scrollbar-thumb { background: #4685e6; border-radius: 4px; }
+    button:enabled { cursor:pointer; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[#17223b] via-[#263859] to-[#6b778d] min-h-screen">
 
-Transforme planilhas volumosas em dados prontos para vendas, marketing ou análise — direto do navegador e sem complicações!
-Nossa solução web faz:
+<body>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="nav-container w-container">
+      <div class="w-layout-grid nav-grid">
+        <div id="w-node-_7b8d8091-0dea-a2f4-c89a-d1b2ab25501b-c20c404f" class="right-div">
+           <a href="/" class="brand w-nav-brand">
+    <img src="https://i.postimg.cc/T1m8H5BX/Logo-Branca.png" alt="Logo Jornalizando Dados" class="logo-image">
+          </a>
+        </div>
+        <div class="nav-menu">
+          <div role="listitem" class="w-dyn-item">
+            <a href="/sobre" class="nav-link w-nav-link" target="_blank">Sobre</a>
+          </div>
+          <div role="listitem" class="w-dyn-item">
+            <a href="/analise-de-dados/" class="nav-link w-nav-link">Análise de Dados</a>
+          </div>
+          <div role="listitem" class="w-dyn-item">
+            <a href="/marketing-digital/" class="nav-link w-nav-link">Marketing Digital</a>
+          </div>
+          <div role="listitem" class="w-dyn-item">
+            <a href="/tecnologia-inovacao/" class="nav-link w-nav-link">Tecnologia e Inovação</a>
+          </div>
+          <div role="listitem" class="w-dyn-item">
+            <a href="/jornalismo-de-dados/" class="nav-link w-nav-link">Jornalismo de Dados</a>
+          </div>
+        </div>
+             <div id="w-node-_7b8d8091-0dea-a2f4-c89a-d1b2ab25500c-c20c404f" class="left-flex-nav">
+          <form action="/search" class="search w-form">
+            <input class="search-input w-input" maxlength="256" name="query" placeholder="Search" type="search" id="search" required="" />
+            <input type="submit" class="search-button w-button" value="" />
+          </form>
+        </div>
+        <nav role="navigation" id="w-node-fc2f9c01-c147-5e03-c1c7-7c18214d8c23-c20c404f" class="mobile-nav-menu w-nav-menu">
+          <a href="/sobre" class="nav-link">Sobre</a>
+          <div class="w-dyn-list">
+            <div role="list" class="categories-menu w-dyn-items">
+              <div role="listitem" class="w-dyn-item"><a href="/analise-de-dados/" class="nav-link w-nav-link">Análise de Dados</a></div>
+              <div role="listitem" class="w-dyn-item"><a href="/marketing-digital/" class="nav-link w-nav-link">Marketing Digital</a></div>
+              <div role="listitem" class="w-dyn-item"><a href="/tecnologia-inovacao/" class="nav-link w-nav-link">Tecnologia e Inovação</a></div>
+              <div role="listitem" class="w-dyn-item"><a href="/jornalismo-de-dados/" class="nav-link w-nav-link">Jornalismo de Dados</a></div>
+            </div>
+      </div>
+    </nav>
+    <div class="menu-button w-nav-button"></div>
+</div>
+</div>
+</div>
+<div class="w-full flex min-h-[90vh] pt-10 pb-14">
+  <!-- Sidebar -->
+  <aside class="sidebar-glass w-72 min-w-[220px] max-w-xs p-6 flex flex-col justify-between mx-4 my-2">
+    <div>
+      <div class="text-2xl font-bold mb-8 tracking-wide text-white">Como usar a Ferramenta</div>
+      <nav class="flex flex-col gap-2 scrollbar overflow-y-auto" style="max-height: 65vh;">
+        <div class="py-2 px-4 rounded-lg hover:bg-blue-500/30 transition text-white">1️⃣ Selecione um arquivo (.xlsx, .csv, .ods, .txt, etc)</div>
+        <div class="py-2 px-4 rounded-lg hover:bg-blue-500/30 transition text-white">2️⃣ Clique em "Iniciar Análise"</div>
+        <div class="py-2 px-4 rounded-lg hover:bg-blue-500/30 transition text-white">3️⃣ Confira os KPIs, preview e alertas</div>
+        <div class="py-2 px-4 rounded-lg hover:bg-blue-500/30 transition text-white">4️⃣ Clique em "Tratar/Limpar Dados"</div>
+        <div class="py-2 px-4 rounded-lg hover:bg-blue-500/30 transition text-white">5️⃣ Baixe os dados limpos</div>
+        <div class="py-2 px-4 mt-8 rounded-lg border border-blue-300/50 text-blue-100 bg-blue-800/30">
+          <b>Dica:</b><br>CPF, nome e telefone são obrigatórios. Reconhecimento automático de colunas inteligentes!
+        </div>
+      </nav>
+    </div>
+    <div>
+      <button class="mt-6 w-full py-2 px-4 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-800 font-bold text-white hover:from-indigo-800 hover:to-blue-600 transition">SAIR</button>
+    </div>
+  </aside>
 
-Upload instantâneo de arquivos grandes (.xlsx, .csv, etc.)
+  <!-- Conteúdo principal -->
+  <main class="flex-1 p-4 md:p-10 flex flex-col gap-7">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-2 gap-2">
+      <div class="text-3xl font-extrabold text-white drop-shadow mb-3 md:mb-0">Diagnóstico da Base</div>
+      <div class="bg-white/20 rounded-xl px-5 py-2 text-white font-medium shadow">Olá, Vitória!</div>
+    </div>
+    <!-- Barra de progresso -->
+    <div class="w-full md:w-1/2 mb-3" id="progressArea" style="display:none;">
+      <div class="mb-1 text-xs text-blue-100" id="progressText">Carregando arquivo...</div>
+      <div class="w-full bg-blue-100 rounded-full h-3 dark:bg-blue-200">
+        <div id="progressBar" class="bg-blue-600 h-3 rounded-full transition-all duration-200" style="width: 0%"></div>
+      </div>
+    </div>
 
-Diagnóstico automático de qualidade: identifica campos obrigatórios (CPF, nome, telefone), aponta duplicidades e inconsistências.
+    <!-- Upload e botões -->
+    <div class="flex flex-col md:flex-row items-center gap-4 mb-2">
+      <input type="file" id="fileInput"
+        accept="*"
+        class="mb-2 md:mb-0 px-4 py-2 border border-blue-600 rounded-lg bg-white text-blue-900 font-semibold shadow focus:ring-2 focus:ring-blue-300" />
+      <span id="fileName" class="text-sm text-blue-100"></span>
+      <button id="btnAnalise" disabled
+        class="ml-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-800 font-bold text-white hover:from-indigo-800 hover:to-blue-600 transition disabled:opacity-50 cursor-pointer">
+        Iniciar Análise
+      </button>
+      <button id="btnLimpar" disabled
+        class="ml-2 px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-pink-600 font-bold text-white hover:from-red-700 hover:to-pink-700 transition disabled:opacity-50 cursor-pointer">
+        Limpar Análise
+      </button>
+    </div>
 
-Tratamento em massa: remove duplicados, valida e padroniza dados para CRM ou discadoras.
+    <!-- KPIs, alertas e botões -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass p-6 flex flex-col items-center justify-center border-2 border-blue-500/70 shadow-xl">
+        <div class="text-blue-800 font-bold text-lg mb-1">Registros Originais</div>
+        <div class="text-3xl font-extrabold text-blue-700 mb-1 drop-shadow" id="kpi-registros">--</div>
+        <div class="text-blue-700 text-sm">Total de linhas</div>
+      </div>
+      <div class="glass p-6 flex flex-col items-center justify-center border-2 border-red-500/80 shadow-xl">
+        <div class="text-red-700 font-bold text-lg mb-1">Inválidos</div>
+        <div class="text-3xl font-extrabold text-red-700 mb-1 drop-shadow" id="kpi-invalidos">--</div>
+        <div class="text-red-700 text-sm">Faltando CPF, nome ou tel.</div>
+      </div>
+      <div class="glass p-6 flex flex-col items-center justify-center border-2 border-green-500/80 shadow-xl">
+        <div class="text-green-700 font-bold text-lg mb-1">Prontos p/ Uso</div>
+        <div class="text-3xl font-extrabold text-green-700 mb-1 drop-shadow" id="kpi-validos">--</div>
+        <div class="text-green-700 text-sm">Linhas válidas</div>
+      </div>
+    </div>
 
-Barra de progresso: acompanhe o processamento em tempo real, sem travamentos!
+    <!-- Alertas e botões -->
+    <div class="flex flex-col md:flex-row gap-6">
+      <div class="glass p-6 border-2 border-pink-500/80 shadow-lg flex-1 flex flex-col min-h-[150px]">
+        <div class="font-bold text-pink-500 mb-2 text-lg">Alertas Importantes</div>
+        <ul id="lista-alertas" class="text-pink-200 text-sm mb-2 list-disc pl-6"></ul>
+        <button id="btnTratar" disabled class="mt-3 w-full py-2 px-4 rounded-lg bg-gradient-to-r from-pink-600 to-pink-400 font-bold text-white hover:from-pink-800 hover:to-pink-500 transition disabled:opacity-50">
+          Tratar / Limpar Dados
+        </button>
+      </div>
+      <div class="glass p-6 border-2 border-blue-500/80 shadow-lg flex-1 flex flex-col min-h-[150px]">
+        <div class="font-bold text-blue-700 mb-2 text-lg">Download</div>
+        <div class="text-blue-800 text-sm mb-3">Baixe os dados já tratados e prontos para uso:</div>
+        <button id="btnDownload" disabled class="w-full py-2 px-4 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-800 font-bold text-white hover:from-indigo-800 hover:to-blue-600 transition disabled:opacity-50">
+          Baixar dados tratados (.xlsx)
+        </button>
+      </div>
+    </div>
 
-Preview e KPIs de qualidade: veja exemplos dos dados e principais indicadores logo após o upload.
+    <!-- Preview tabelas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+      <!-- Preview original -->
+      <div class="glass p-6 border-2 border-indigo-500/80 shadow-lg overflow-x-auto">
+        <div class="font-bold text-indigo-700 mb-2 text-lg">Preview dos Dados Originais <span class="text-xs text-blue-400">(Amostra de 10 linhas de <span id="total-orig">0</span>)</span></div>
+        <table class="min-w-full text-xs rounded">
+          <thead id="thead-original"></thead>
+          <tbody id="tbody-original" class="bg-white"></tbody>
+        </table>
+      </div>
+      <!-- Preview tratado -->
+      <div class="glass p-6 border-2 border-green-600/80 shadow-lg overflow-x-auto">
+        <div class="font-bold text-green-700 mb-2 text-lg">Preview dos Dados Tratados <span class="text-xs text-blue-400">(Amostra de 10 linhas de <span id="total-trat">0</span>)</span></div>
+        <table class="min-w-full text-xs rounded">
+          <thead id="thead-tratado"></thead>
+          <tbody id="tbody-tratado" class="bg-white"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
 
-Download dos dados tratados, prontos para uso!
+<script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+<script>
+let dadosOriginais = [];
+let dadosTratados = [];
+let colMap = {};
+const aliases = {
+  cpf: ["cpf", "CPF", "doc", "documento", "document", "numero_cpf", "cadastro", "beneficio"],
+  nome: ["nome", "Nome", "cliente", "titular", "beneficiario", "nome_cliente"],
+  telefone: ["telefone", "Telefone", "tel", "celular", "cel", "fone", "contato", "phone", "celular_cliente", "telefone_celular"]
+};
+function detectarColuna(headers, aliasesCampo) {
+  return headers.find(h => aliasesCampo.some(a => h.toLowerCase().includes(a.toLowerCase())));
+}
+function validarCPF(cpf) {
+  cpf = String(cpf ?? '').replace(/\D/g, '');
+  return cpf.length === 11;
+}
+function validarTelefone(tel) {
+  tel = String(tel ?? '').replace(/\D/g, '');
+  return tel.length >= 10 && tel.length <= 11;
+}
+function previewTabela(arr, theadId, tbodyId, totalId) {
+  if (totalId) document.getElementById(totalId).textContent = arr.length || 0;
+  if (!arr.length) {
+    document.getElementById(theadId).innerHTML = "";
+    document.getElementById(tbodyId).innerHTML = "<tr><td class='py-4 text-center text-gray-400' colspan='99'>Nenhum dado para exibir</td></tr>";
+    return;
+  }
+  const keys = Object.keys(arr[0]);
+  document.getElementById(theadId).innerHTML = "<tr>" + keys.map(k=>`<th class='px-3 py-2 bg-gray-100 text-gray-700'>${k}</th>`).join("") + "</tr>";
+  document.getElementById(tbodyId).innerHTML = arr.slice(0,10).map(row =>
+    "<tr>"+keys.map(k=>`<td class='px-3 py-1 border-b'>${row[k]}</td>`).join("")+"</tr>"
+  ).join("");
+}
 
-Ideal para:
+document.getElementById('fileInput').addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  document.getElementById('progressArea').style.display = "block";
+  document.getElementById('progressText').textContent = "Carregando arquivo...";
+  document.getElementById('progressBar').style.width = "0%";
+  dadosOriginais = [];
+  dadosTratados = [];
+  colMap = {};
+  document.getElementById('fileName').textContent = file ? file.name : '';
+  document.getElementById('btnAnalise').disabled = !file;
+  document.getElementById('btnLimpar').disabled = !file;
+  previewTabela([], 'thead-original', 'tbody-original', 'total-orig');
+  previewTabela([], 'thead-tratado', 'tbody-tratado', 'total-trat');
+  document.getElementById('kpi-registros').textContent = '--';
+  document.getElementById('kpi-invalidos').textContent = '--';
+  document.getElementById('kpi-validos').textContent = '--';
+  document.getElementById('lista-alertas').innerHTML = '';
+  document.getElementById('btnTratar').disabled = true;
+  document.getElementById('btnDownload').disabled = true;
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onprogress = function(event) {
+    if (event.lengthComputable) {
+      let percent = Math.round((event.loaded / event.total) * 100);
+      document.getElementById('progressBar').style.width = percent + "%";
+      document.getElementById('progressText').textContent = `Carregando arquivo: ${percent}%`;
+    }
+  };
+  reader.onload = function(evt) {
+    document.getElementById('progressBar').style.width = "100%";
+    document.getElementById('progressText').textContent = "Processando dados...";
+    setTimeout(() => {
+      let wb;
+      if (file.name.endsWith('.csv')) {
+        wb = XLSX.read(evt.target.result, { type: 'string' });
+      } else {
+        wb = XLSX.read(evt.target.result, { type: 'binary' });
+      }
+      const wsname = wb.SheetNames[0];
+      const ws = wb.Sheets[wsname];
+      dadosOriginais = XLSX.utils.sheet_to_json(ws, { defval: "" });
+      document.getElementById('progressBar').style.width = "100%";
+      document.getElementById('progressText').textContent = "Pronto!";
+      previewTabela(dadosOriginais, 'thead-original', 'tbody-original', 'total-orig');
+      setTimeout(() => {
+        document.getElementById('progressArea').style.display = "none";
+      }, 700);
+    }, 800);
+  };
+  if (file.name.endsWith('.csv')) reader.readAsText(file);
+  else reader.readAsBinaryString(file);
+});
 
-Gestores de CRM, marketing e vendas
+// Diagnóstico em lotes, barra sempre visível
+document.getElementById('btnAnalise').addEventListener('click', async function() {
+  if (!dadosOriginais.length) return;
+  colMap = {};
+  let arr = dadosOriginais;
+  let headers = Object.keys(arr[0] || {});
+  colMap = {
+    cpf: detectarColuna(headers, aliases.cpf),
+    nome: detectarColuna(headers, aliases.nome),
+    telefone: detectarColuna(headers, aliases.telefone)
+  };
+  let missingFields = Object.entries(colMap).filter(([campo, header]) => !header).map(([campo]) => campo);
+  let total = arr.length;
+  let invalidos = 0, validos = 0, alertas = [], duplicados = 0;
+  let listaDuplicados = {};
+  const batchSize = 500; // Menor lote, ainda mais fluido!
+  let index = 0;
+  document.getElementById('progressArea').style.display = "block";
+  document.getElementById('progressText').textContent = "Diagnóstico em andamento...";
+  document.getElementById('progressBar').style.width = "0%";
+  async function diagnosticoBatch() {
+    const end = Math.min(index + batchSize, total);
+    for (let i = index; i < end; i++) {
+      const row = arr[i];
+      let invalido = false;
+      if (!row[colMap.cpf] || !row[colMap.nome] || !row[colMap.telefone]) invalido = true;
+      if (row[colMap.cpf] && !validarCPF(row[colMap.cpf])) invalido = true;
+      if (row[colMap.telefone] && !validarTelefone(row[colMap.telefone])) invalido = true;
+      if (invalido) invalidos++;
+      else validos++;
+    let cpfLimpo = String(row[colMap.cpf] ?? '').replace(/\D/g, '');
+      if (cpfLimpo) listaDuplicados[cpfLimpo] = (listaDuplicados[cpfLimpo]||0)+1;
+    }
+    const percent = Math.round((end/total)*100);
+    document.getElementById('progressBar').style.width = percent + "%";
+    document.getElementById('progressText').textContent = `Diagnóstico: ${percent}%`;
+    await new Promise(r => requestAnimationFrame(r)); // FORÇA render entre os lotes
+    if (end < total) {
+      index = end;
+      diagnosticoBatch();
+    } else {
+      duplicados = Object.values(listaDuplicados).filter(v=>v>1).reduce((a,b)=>a+(b-1),0);
+      let missingMessage = "";
+      if (missingFields.length) {
+        missingMessage = `<li class="text-red-500 font-bold">⚠️ Atenção: coluna obrigatória não encontrada: ${missingFields.join(", ").toUpperCase()}</li>`;
+        document.getElementById('btnTratar').disabled = true;
+      } else {
+        document.getElementById('btnTratar').disabled = false;
+      }
+      if (missingFields.length) {
+        alertas.push(missingMessage);
+      } else {
+        if (invalidos>0) alertas.push(`⚠️ ${invalidos} registros com falta de CPF, nome, telefone ou formato inválido`);
+        if (duplicados>0) alertas.push(`⚠️ ${duplicados} CPFs duplicados detectados`);
+        if (validos===0) alertas.push('Nenhum registro válido encontrado!');
+        if (alertas.length===0) alertas.push("✅ Nenhum problema crítico, pronto para tratar e usar!");
+      }
+      document.getElementById('kpi-registros').textContent = total;
+      document.getElementById('kpi-invalidos').textContent = invalidos;
+      document.getElementById('kpi-validos').textContent = validos;
+      document.getElementById('lista-alertas').innerHTML = alertas.join('');
+      previewTabela(arr, 'thead-original', 'tbody-original', 'total-orig');
+      previewTabela([], 'thead-tratado', 'tbody-tratado', 'total-trat');
+      document.getElementById('btnDownload').disabled = true;
+      dadosTratados = [];
+      document.getElementById('btnLimpar').disabled = false;
+      document.getElementById('progressBar').style.width = "100%";
+      document.getElementById('progressText').textContent = "Diagnóstico concluído!";
+      setTimeout(() => {
+        document.getElementById('progressArea').style.display = "none";
+      }, 700);
+    }
+  }
+  diagnosticoBatch();
+});
 
-Equipes que trabalham com leads e mailings
+document.getElementById('btnTratar').addEventListener('click', function() {
+  if (!dadosOriginais.length || !colMap.cpf || !colMap.nome || !colMap.telefone) return;
+  let jaViu = new Set();
+  dadosTratados = [];
+  const total = dadosOriginais.length;
+  const batchSize = 1000;
+  let index = 0;
+  document.getElementById('progressArea').style.display = "block";
+  document.getElementById('progressText').textContent = "Tratando dados...";
+  document.getElementById('progressBar').style.width = "0%";
+  function processBatch() {
+    const end = Math.min(index + batchSize, total);
+    for (let i = index; i < end; i++) {
+      const row = dadosOriginais[i];
+      if (!row[colMap.cpf] || !row[colMap.nome] || !row[colMap.telefone]) continue;
+      let cpfLimpo = String(row[colMap.cpf]).replace(/\D/g,'');
+      if (!validarCPF(cpfLimpo)) continue;
+      if (!validarTelefone(row[colMap.telefone])) continue;
+      if (jaViu.has(cpfLimpo)) continue;
+      jaViu.add(cpfLimpo);
+      dadosTratados.push(row);
+    }
+    const percent = Math.round((end/total)*100);
+    document.getElementById('progressBar').style.width = percent + "%";
+    document.getElementById('progressText').textContent = `Tratando dados: ${percent}%`;
+    document.getElementById('progressBar').offsetWidth; // força repaint
+    if (end < total) {
+      index = end;
+      setTimeout(processBatch, 30);
+    } else {
+      previewTabela(dadosTratados, 'thead-tratado', 'tbody-tratado', 'total-trat');
+      document.getElementById('btnDownload').disabled = (dadosTratados.length === 0);
+      document.getElementById('progressBar').style.width = "100%";
+      document.getElementById('progressText').textContent = "Tratamento concluído!";
+      setTimeout(() => {
+        document.getElementById('progressArea').style.display = "none";
+      }, 800);
+    }
+  }
+  processBatch();
+});
 
-Empresas que querem mais conversão e menos retrabalho!
+document.getElementById('btnDownload').addEventListener('click', function() {
+  if (!dadosTratados.length) return;
+  const ws = XLSX.utils.json_to_sheet(dadosTratados);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, "Tratados");
+  XLSX.writeFile(wb, "dados_tratados.xlsx");
+});
 
-Ganhe produtividade, aumente a conversão e tenha segurança na sua base de dados!
-
-Documentação Resumida da Ferramenta
-Visão Geral
-O Diagnóstico de Bases é uma ferramenta web para análise, tratamento e limpeza de grandes planilhas de leads (ou clientes) diretamente do navegador, sem instalação e com interface intuitiva.
-
-Como usar
-1. Selecione seu arquivo
-
-Clique no botão de upload e escolha uma planilha .xlsx, .csv ou .txt do seu computador.
-
-Aguarde o upload e o carregamento inicial.
-
-2. Inicie o diagnóstico
-
-Clique em “Iniciar Análise”.
-
-O sistema identifica automaticamente as principais colunas (CPF, nome, telefone) mesmo com cabeçalhos variados.
-
-Veja a barra de progresso em tempo real enquanto a base é analisada.
-
-3. Confira os resultados
-
-KPIs principais: total de registros, inválidos e prontos para uso.
-
-Alertas automáticos: campos obrigatórios ausentes, CPFs duplicados, registros inválidos.
-
-Preview dos dados (primeiras 10 linhas).
-
-4. Trate e limpe sua base
-
-Clique em “Tratar / Limpar Dados”.
-
-O app remove duplicidades, corrige e padroniza automaticamente.
-
-Visualize o preview dos dados limpos.
-
-5. Baixe sua base tratada
-
-Clique em “Baixar dados tratados (.xlsx)”.
-
-Use os dados em seu CRM, sistema de vendas, campanhas ou onde preferir!
-
-Funcionalidades
-Reconhecimento automático de colunas: entende variações de cabeçalho como "CPF", "doc", "telefone", "celular", etc.
-
-Validação robusta: só considera válidos registros com CPF de 11 dígitos e telefone (10 ou 11 dígitos), ambos padronizados.
-
-Tratamento em lotes: suporta bases com até centenas de milhares de registros sem travar.
-
-Barra de progresso: feedback visual durante upload, análise e tratamento.
-
-Preview seguro: nunca exibe toda a base na tela, apenas amostra dos dados.
-
-Requisitos
-Funciona em qualquer navegador moderno (Google Chrome, Firefox, Edge, Safari).
-
-Não requer instalação ou plugins.
-
-Privacidade total: todo processamento ocorre no seu computador, sem envio de dados para servidores externos.
-
-Perguntas Frequentes
-Quais tipos de arquivos são suportados?
-Planilhas .xlsx, .csv, .txt e .ods.
-
-Funciona com cabeçalhos diferentes de “CPF”, “Nome”, “Telefone”?
-Sim, a ferramenta reconhece automaticamente variações comuns.
-
-Tenho base grande, vai travar?
-Não! O tratamento é feito em lotes, com barra de progresso. Pode usar tranquilamente até 500 mil linhas.
-
-Meus dados ficam seguros?
-Sim! Nada é enviado para servidores externos.
-
-Exemplo de caso de uso
-Antes: planilha de leads misturada, com erros, duplicidades e telefones inválidos.
-
-Depois: lista pronta, limpa, separada, com todos os indicadores e pronta para importar para o CRM/discadora.
-
-Contato para customizações ou integração
-Precisa adaptar para seu negócio? Integração com sistemas, APIs ou filtros especiais?
-Entre em contato:
-📧 vitoria.vilaverde@jornalizandodados.com
-LinkedIn
-
+document.getElementById('btnLimpar').addEventListener('click', function() {
+  dadosOriginais = [];
+  dadosTratados = [];
+  colMap = {};
+  document.getElementById('fileInput').value = '';
+  document.getElementById('fileName').textContent = '';
+  previewTabela([], 'thead-original', 'tbody-original', 'total-orig');
+  previewTabela([], 'thead-tratado', 'tbody-tratado', 'total-trat');
+  document.getElementById('kpi-registros').textContent = '--';
+  document.getElementById('kpi-invalidos').textContent = '--';
+  document.getElementById('kpi-validos').textContent = '--';
+  document.getElementById('lista-alertas').innerHTML = '';
+  document.getElementById('btnAnalise').disabled = true;
+  document.getElementById('btnTratar').disabled = true;
+  document.getElementById('btnDownload').disabled = true;
+  document.getElementById('btnLimpar').disabled = true;
+});
+</script>
+</body>
+</html>
