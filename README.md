@@ -1,12 +1,3 @@
-Claro, Vitória! Vou te entregar dois blocos prontos:
-
-1. **Pitch comercial curto e objetivo** para captar clientes ou apresentar a solução.
-2. **Documentação** amigável para usuário final e também para portfólio/apresentação.
-
-Você pode adaptar para site, PDF, apresentação ou LinkedIn.
-
----
-
 ## **Pitch Comercial — Diagnóstico e Tratamento de Bases de Dados (Web App)**
 
 **Diagnóstico Inteligente de Bases de Dados – Limpeza e Qualidade de Leads em um Clique!**
